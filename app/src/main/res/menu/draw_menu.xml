@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_message"
+        <item
+            android:id="@+id/nav_message"
             android:icon="@drawable/message"
-            android:title="Mesagges">
-        </item>
-        <item android:id="@+id/nav_chat"
+            android:title="Mesagges"></item>
+        <item
+            android:id="@+id/nav_chat"
             android:icon="@drawable/chat"
-            android:title="Chat">
-        </item>
-        <item android:id="@+id/nav_profile"
+            android:title="Chat"></item>
+        <item
+            android:id="@+id/nav_profile"
             android:icon="@drawable/profile"
-            android:title="Profile">
-        </item>
+            android:title="Profile"></item>
     </group>
-
+    <item android:title="Comunication">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share"></item>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_baseline_send_24"
+                android:title="Send"></item>
+        </menu>
+    </item>
 
 </menu>

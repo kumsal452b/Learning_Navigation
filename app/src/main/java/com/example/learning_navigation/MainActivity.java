@@ -8,6 +8,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
+
 import com.google.android.material.navigation.NavigationView;
 import static com.example.learning_navigation.R.id.fragment_conteiner;
 
@@ -18,12 +20,13 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     ActionBarDrawerToggle barDrawerToggle;
-
+    private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
+        textView=findViewById(R.id.header_text_element);
         drawerLayout = findViewById(R.id.drawer_layout);
 //        setSupportActionBar(toolbar);
         barDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
